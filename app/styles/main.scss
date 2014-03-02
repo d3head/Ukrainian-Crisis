@@ -1,0 +1,79 @@
+$blue: rgba(41, 128, 185,1.0);
+$wet: rgba(44, 62, 80,1.0);
+
+body {
+    background: #fafafa;
+    font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
+    color: #333;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+a {
+  color: $blue;
+  transition:all .2s;
+
+  &:hover {
+    color: lighten($blue, 10%);
+  }
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+
+  header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    h1 {
+
+    }
+  }
+
+  section {
+    span.update {
+      padding-left: 10px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      color: $wet;
+      transition:all .2s;
+
+      &:hover {
+        color: lighten($wet, 10%);
+      }
+    }
+  }
+
+  footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    margin: 20px 0 20px 0;
+  }
+
+  .tweets {
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 16px;
+
+      li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .timePosted {
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+}
+
+
+#map-canvas {
+  height: 300px;
+  width: 100%;
+}
