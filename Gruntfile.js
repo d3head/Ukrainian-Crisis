@@ -328,7 +328,9 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
+                        'styles/fonts/{,*/}*.*',
+                        'bower_components/font-awesome/' + (this.includeCompass ? 'scss/' : 'css/') +'*.*',
+                        'bower_components/font-awesome/' + (this.includeCompass ? 'fonts/' : 'fonts/') +'*.*'
                     ]
                 }]
             },
